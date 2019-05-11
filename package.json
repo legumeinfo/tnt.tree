@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "prepare": "node ./node_modules/webpack/bin/webpack.js -p && gulp build && babel -d lib src"
   },
   "repository": {
     "type": "git",
